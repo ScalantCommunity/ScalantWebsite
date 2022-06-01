@@ -10,11 +10,11 @@ export const Hero = () => {
           <p className="hero-paragraph">
             Student Community for learning and growing together, be the part of the amazing communtiy that will help you in your journey.
           </p>
-          <div className="hero-cta">
-            <a className="button button-primary" href="#">
-              Join Whatsapp
-            </a>
-            <a className="button" href="#">
+//           <div className="hero-cta">
+//             <a className="button button-primary" href="#">
+//               Join Whatsapp
+//             </a>
+            <a className="button" href=" https://discord.gg/8xhHPJgs">
               Join the Discord
             </a>
           </div>
