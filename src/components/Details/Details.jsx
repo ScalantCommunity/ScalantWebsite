@@ -5,7 +5,7 @@ const Details = () => {
     <section className="pricing section">
     <div className="container-sm">
       <div className="pricing-inner section-inner">
-        <div className="pricing-header text-center">
+        <div data-aos="fade-left" className="pricing-header text-center">
           <h2 className="section-title mt-0">Join the Community that supports you!</h2>
           <p className="section-paragraph mb-0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

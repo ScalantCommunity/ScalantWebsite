@@ -8,8 +8,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-animate-on-scroll": "^2.1.5",
+    "react-animation-on-scroll": "^5.1.0",
+    "react-dom": "^18.0.0",
+    "react-reveal": "^1.2.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
