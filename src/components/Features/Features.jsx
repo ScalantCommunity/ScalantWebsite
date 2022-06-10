@@ -7,7 +7,6 @@ const Features = () => {
     <section className="features section">
     <div className="container">
       <div style={{paddingTop:'0rem'}} className="features-inner section-inner has-bottom-divider">
-     
         <div className="features-wrap">
           <div data-aos="fade-up" className="feature text-center is-revealing">
             <div className="feature-inner">
@@ -43,7 +42,6 @@ const Features = () => {
             </div>
           </div>
         </div>
-      
       </div>
     </div>
   </section>

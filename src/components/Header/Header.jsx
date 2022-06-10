@@ -1,6 +1,10 @@
 import React from 'react'
+import { NavLink, useLocation  } from 'react-router-dom'
 import logo from '../../images/logo.png'
+
 const Header = () => {
+  const location = useLocation();
+
   return (
     <header className="site-header">
     <div className="container">
@@ -18,11 +22,11 @@ const Header = () => {
             
           </h1>
           <div style={{display: 'flex', gap:'1rem'}}>
-          <a href="#" style={{textDecoration: 'none'}}>
+            <NavLink to={location.pathname=== '/' ? "/aboutus": '/'} style={{textDecoration: 'none'}}>
+              {location.pathname=== '/' ? "About Us": 'Home'}
+            </NavLink>
+            <a href="#" style={{textDecoration: 'none'}}>
               Login
-            </a>
-          <a href="#" style={{textDecoration: 'none'}}>
-              SignUp
             </a>
           </div>
         </div>
