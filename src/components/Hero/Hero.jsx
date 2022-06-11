@@ -15,8 +15,8 @@ import art from '../../images/rocket-dynamic-color.png'
             Student Community for learning and growing together, be the part of the amazing communtiy that will help you in your journey.
           </p>  
           <div className="hero-cta">
-              <a className="button button-primary" href="#">Join Whatsapp</a>
-              <a className="button" href=" https://discord.gg/8xhHPJgs">Join the Discord</a>
+              <a className="button button-primary" target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Join Whatsapp</a>
+              <a className="button" target="_blank" href="https://discord.gg/WSePvFt37D">Join the Discord</a>
           </div>
         </div>
         <div data-aos="fade-left" className=" anime-element">

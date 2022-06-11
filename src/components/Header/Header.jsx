@@ -11,21 +11,21 @@ const Header = () => {
       <div className="site-header-inner">
         <div className="brand header-brand" style={{width:'100%',display: 'flex', justifyContent: 'space-between', alignItems:'center'}}>
           <h1 className="m-0">
-            <a href="#">
+            <NavLink to='/'>
               <img
                 className="header-logo-image"
                 src={logo}
                 alt="Logo"
                 style={{width: '6rem'}}
               />
-            </a>
+            </NavLink>
             
           </h1>
           <div style={{display: 'flex', gap:'1rem'}}>
             <NavLink to={location.pathname=== '/' ? "/aboutus": '/'} style={{textDecoration: 'none'}}>
               {location.pathname=== '/' ? "About Us": 'Home'}
             </NavLink>
-            <a href="#" style={{textDecoration: 'none'}}>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" style={{textDecoration: 'none'}}>
               Login
             </a>
           </div>

@@ -13,7 +13,7 @@ const Details = () => {
             quis nostrud.
           </p>
         </div>
-        <div className="pricing-tables-wrap">
+        <div data-aos="zoom-in" className="pricing-tables-wrap">
           <div className="pricing-table">
             <div className="pricing-table-inner is-revealing">
               <div className="pricing-table-main">
@@ -35,7 +35,7 @@ const Details = () => {
                   </li>
                 </ul>
               </div>
-              <div className="pricing-table-cta mb-8">
+              <div data-aos="flip-left" className="pricing-table-cta mb-8">
                 <a
                   className="button button-primary button-shadow button-block"
                   href="#"

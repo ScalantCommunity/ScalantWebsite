@@ -1,3 +1,5 @@
+
+
 const members = [
   {
     Timestamp: "2022-06-03T12:40:10.527Z",
@@ -9,7 +11,7 @@ const members = [
     githubURL: "https://github.com/hrongit",
     twitterURL: "https://twitter.com/heyhritik_?t=kjFmUUeQ0YPPtRBw1r-5PA&s=09",
     instagramURL: "@hey.hritik",
-    photo: "https://drive.google.com/uc?id=1bTjZDodiwVLgniRRxxmFmZ4LhOX5koWG"
+    photo: "https://i.ibb.co/16sWnH1/Hritik-Raj.jpg"
   },
   {
     Timestamp: "2022-06-03T16:18:27.000Z",
@@ -21,7 +23,7 @@ const members = [
     githubURL: "https://github.com/dishant0406",
     twitterURL: "https://twitter.com/dishant0406",
     instagramURL: "https://www.instagram.com/dishant0406/",
-    photo: "https://drive.google.com/uc?id=1qL9EPQYqLYvNB8PndvQQH7DAvkOjuOnr"
+    photo: "https://i.ibb.co/xMrNwcX/Dishant-Sharma.png"
   },
   {
     Timestamp: "2022-06-04T05:59:19.419Z",
@@ -33,7 +35,7 @@ const members = [
     githubURL: "https://github.com/NikhilMahana",
     twitterURL: "https://twitter.com/Nikhil_Mahana",
     instagramURL: "https://www.instagram.com/nikhil__mahana/",
-    photo: "https://drive.google.com/uc?id=1Qrg3Ei-bXKnTv-jZ2XLCyx8HGHCBVIF3"
+    photo: "https://i.ibb.co/hyQvR8N/Nikhil-Mahana.png"
   },
   {
     Timestamp: "2022-06-04T04:56:29.016Z",
@@ -45,7 +47,7 @@ const members = [
     githubURL: "https://github.com/Spyder15",
     twitterURL: "https://twitter.com/Mundr1Priyanshu?t=XXBHugeSj5X_qF8EFNM4DA&s=09",
     instagramURL: "https://instagram.com/mundra__priyanshu?igshid=YmMyMTA2M2Y=",
-    photo: "https://drive.google.com/uc?id=1RtvYsPZpZHzNav0X2ZqNpz3igJzWlEo4"
+    photo: "https://i.ibb.co/CB3KBhY/Priyanshu-Mundra.jpg"
   },
   {
     Timestamp: "2022-06-04T15:48:39.833Z",
@@ -57,7 +59,7 @@ const members = [
     githubURL: "https://github.com/Vyvy-vi",
     twitterURL: "https://twitter.com/Vyvy_viM",
     instagramURL: "NA",
-    photo: "https://drive.google.com/uc?id=1zRrKoFE_sBXFNAN_UbMYF40uZEgajMjY"
+    photo: "https://i.ibb.co/7CCv54c/Vyom-Jain.png"
   },
   {
     Timestamp: "2022-06-03T14:53:41.800Z",
@@ -69,7 +71,7 @@ const members = [
     githubURL: "https://github.com/Reshamhere",
     twitterURL: "https://twitter.com/reshamyaar",
     instagramURL: "https://www.instagram.com/reshamx._",
-    photo: "https://drive.google.com/uc?id=1hsmQxK9E4MSOS0rWL8FIcPy0ByjAmLix"
+    photo: "https://i.ibb.co/6NN4G0M/Resham-Bharti.png"
   },
   {
     Timestamp: "2022-06-03T18:36:44.440Z",
@@ -81,7 +83,7 @@ const members = [
     githubURL: "https://github.com/ishaggarwal13",
     twitterURL: "https://mobile.twitter.com/IshaAgg42703323",
     instagramURL: "https://www.instagram.com/ishaggarwal__/",
-    photo: "https://drive.google.com/uc?id=1xRQIG3v9vDm-z60Y9e-6FS1ds6eKzasw"
+    photo: "https://i.ibb.co/bLD5F3y/Isha-Aggarwal.png"
   },
   {
     Timestamp: "2022-06-03T15:16:07.588Z",
@@ -93,7 +95,7 @@ const members = [
     githubURL: "https://github.com/VAINAVISRIVASTAVA",
     twitterURL: "https://twitter.com/VainaviSrivas28",
     instagramURL: "https://www.instagram.com/_vainavisrivastava/",
-    photo: "https://drive.google.com/uc?id=12qdGeOMqbCcCK17HMivGTuxklzFIgmAM"
+    photo: "https://i.ibb.co/xs4wQD6/Vainavi-Srivastava.jpg"
   },
   {
     Timestamp: "2022-06-03T12:21:11.244Z",
@@ -105,7 +107,7 @@ const members = [
     githubURL: "https://github.com/Ashish-forGit",
     twitterURL: "https://twitter.com/AshishK51810560?t=sChNgv8cdNRhpzagNumPlQ&s=09",
     instagramURL: "https://www.instagram.com/just_ashu__/?utm_medium=copy_link",
-    photo: "https://drive.google.com/uc?id=1PmXl5L2m7Dr_wWej04qyPlSYgY5bFd4q"
+    photo: "https://i.ibb.co/zhLRHH6/Ashish-Kumar.jpg"
   },
 
   {
@@ -118,7 +120,7 @@ const members = [
     githubURL: "https://github.com/Saksham-1612",
     twitterURL: "https://twitter.com/Saksham2002",
     instagramURL: "https://www.instagram.com/incredible_1612/",
-    photo: "https://drive.google.com/uc?id=1iQmM3kE6X5JqF_ip7JbfjwhwsernNYiV"
+    photo: "https://i.ibb.co/S5CnJhM/Saksham-Srivastava.jpg"
   },
 
 
@@ -132,7 +134,7 @@ const members = [
     githubURL: "https://github.com/sathvik995",
     twitterURL: "https://twitter.com/Sathvik995",
     instagramURL: "https://www.instagram.com/bejjankisathvik/",
-    photo: "https://drive.google.com/uc?id=1kNr_0MyhPC4bp_dgnUFyVXF4ZWJalhKe"
+    photo: "https://i.ibb.co/tBY7QG6/sathvik-bejjanki.jpg"
   },
   {
     Timestamp: "2022-06-03T17:31:53.236Z",
@@ -144,7 +146,7 @@ const members = [
     githubURL: "https://github.com/Jhatrilok02",
     twitterURL: "https://twitter.com/Trilokjha02",
     instagramURL: "https://www.instagram.com/jha_trilok/",
-    photo: "https://drive.google.com/uc?id=15BOZxABjI6hZO5CkojqMi3dJKmWw9wKe"
+    photo: "https://i.ibb.co/8bcPpkc/Trilok-Jha.jpg"
   },
   {
     Timestamp: "2022-06-03T17:35:39.102Z",
@@ -156,7 +158,7 @@ const members = [
     githubURL: "https://github.com/Ayushraj24 and https://github.com/urbanstyle24",
     twitterURL: "not applicable at the moment",
     instagramURL: "https://www.instagram.com/urban_style_24/",
-    photo: "https://drive.google.com/uc?id=1lhf9zyf9LgeLtafHjDsoTTu7XBlceFLi"
+    photo: "https://i.ibb.co/bzYXRy8/AYUSH-RAJ.png"
   },
 
 
@@ -172,7 +174,7 @@ const members = [
     githubURL: "https://github.com/deepanshi4",
     twitterURL: "https://twitter.com/DeepanshiK2",
     instagramURL: "instagram.com/_deepu_4/",
-    photo: "https://drive.google.com/uc?id=1kBTnWVL6BFAUAFKSyG1iqRW0e7S9RiXP"
+    photo: "https://i.ibb.co/2WdFG4b/Deepanshi-K.png"
   },
   {
     Timestamp: "2022-06-09T06:13:39.152Z",
@@ -184,7 +186,7 @@ const members = [
     githubURL: "https://github.com/astrorawat",
     twitterURL: "witter.com/KIRTIRA71848523",
     instagramURL: "https://www.instagram.com/astrorawat/",
-    photo: "https://drive.google.com/uc?id=1KZQNwer1VD91Ay5nLK2_BVAIJ8bAkFRA"
+    photo: "https://i.ibb.co/23KVNxC/Kirti-Rawat.jpg"
   },
   {
     Timestamp: "2022-06-09T06:25:16.790Z",
@@ -196,7 +198,7 @@ const members = [
     githubURL: "https://github.com/Jagriti-grover20",
     twitterURL: "None",
     instagramURL: "https://www.instagram.com/jagriti_grover20/?hl=en",
-    photo: "https://drive.google.com/uc?id=1Jq0mDkiinUh35JvSX4DJsBBHAFCS52k-"
+    photo: "https://i.ibb.co/qxQWD6K/JAGRITI-GROVER.jpg"
   },
   {
     Timestamp: "2022-06-09T08:28:19.363Z",
@@ -208,7 +210,7 @@ const members = [
     githubURL: "https://github.com/shrugithub",
     twitterURL: "NA",
     instagramURL: "https://instagram.com/shrutiism_?igshid=YmMyMTA2M2Y=",
-    photo: "https://drive.google.com/uc?id=1e2nOzlFSkIu5fstHCAkxDDDorsQpPRnw"
+    photo: "https://i.ibb.co/dkdZDtX/Shruti.jpg"
   },
   {
     Timestamp: "2022-06-09T09:50:16.594Z",
@@ -220,7 +222,7 @@ const members = [
     githubURL: "github.com/Roshan102003",
     twitterURL: "twitter.com/Roshan_earth286",
     instagramURL: "www.instagram.com/roshan_earth286/",
-    photo: "https://drive.google.com/uc?id=1IoAfXfobJDhCu29gRfsGa6gA9_UE-kw_"
+    photo: "https://i.ibb.co/SnnsKTS/Roshan-Sharma.jpg"
   }
 ]
 

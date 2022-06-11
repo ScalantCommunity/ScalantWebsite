@@ -3,10 +3,10 @@ import {members} from '../../Data/memberData'
 import Tilt from 'react-parallax-tilt';
 const Members = () => {
   return (
-    <div className='container' style={{display: 'flex', flexWrap: 'wrap', gap:'2rem', alignItems: 'center', justifyContent: 'center'}}>
+    <div data-aos="zoom-in" className='container' style={{display: 'flex', flexWrap: 'wrap', gap:'2rem', alignItems: 'center', justifyContent: 'center'}}>
       {members.map(member=>{
-        return <>
-        <Tilt
+        return <Tilt
+        key={member.contactNumber}
         perspective={500}
         glareEnable={true}
         glareMaxOpacity={0.45}
@@ -44,7 +44,7 @@ const Members = () => {
           </div>
         </center>
       </Tilt>
-      </>
+      
       })}
   
     </div>
