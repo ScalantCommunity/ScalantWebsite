@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages-clean gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",
