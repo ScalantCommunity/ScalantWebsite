@@ -2,7 +2,7 @@
   "name": "scalant",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://scalantcommunity.github.io/ScalantWebsite/",
+  "homepage": "https://scalantcommunity.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
