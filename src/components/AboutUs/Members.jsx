@@ -12,7 +12,6 @@ const Members = () => {
         glareMaxOpacity={0.45}
         glarePosition="all"
         scale={1.02}
-        gyroscope={true} tiltMaxAngleX={20} tiltMaxAngleY={20}
         className="parallax-effect-glare-scale">
         <center className="inner-element">
           <img
