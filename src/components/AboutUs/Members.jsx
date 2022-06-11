@@ -17,7 +17,7 @@ const Members = () => {
           <img
             src={member.photo}
             alt="image"
-            style={{height:'8rem', width:'8rem', borderRadius:'4rem'}}
+            style={{height:'8rem', width:'8rem', borderRadius:'4rem',  filter:'drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5))'}}
           />
           <h2 style={{fontFamily:'Poppins', fontSize:'20px'}}>{member.Name.toLocaleUpperCase()}</h2>
           <div style={{display:'flex'}}>
