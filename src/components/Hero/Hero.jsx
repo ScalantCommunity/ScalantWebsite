@@ -1,6 +1,6 @@
 import React from 'react'
 import art from '../../images/rocket-dynamic-color.png'
-
+import Tilt from 'react-parallax-tilt';
 
 
  const Hero = () => {
@@ -19,9 +19,16 @@ import art from '../../images/rocket-dynamic-color.png'
               <a className="button" target="_blank" href="https://discord.gg/WSePvFt37D">Join the Discord</a>
           </div>
         </div>
-        <div data-aos="fade-left" className=" anime-element">
-          <img src={art}/>
-        </div>
+        <Tilt
+        perspective={500}
+        glareEnable={true}
+        glareMaxOpacity={0.45}
+        glarePosition="all"
+        scale={1.02}>
+          <div data-aos="fade-left" className=" anime-element">
+            <img src={art}/>
+          </div>
+        </Tilt>
       </div>
     </div>
   </section>
