@@ -18,14 +18,14 @@ const Details = () => {
             <div className="pricing-table-inner is-revealing">
               <div className="pricing-table-main">
                 <div className="pricing-table-features-title text-xs pt-24 pb-24">
-                  What you will get
+                  What will you get?
                 </div>
                 <ul className="pricing-table-features list-reset text-xs">
                   <li>
                     <span>Support from our Mentors</span>
                   </li>
                   <li>
-                    <span>Daily Events</span>
+                    <span>Exciting Events</span>
                   </li>
                   <li>
                     <span>Quality Content</span>
