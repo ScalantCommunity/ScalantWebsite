@@ -8,9 +8,9 @@ const Details = () => {
         <div data-aos="fade-left" className="pricing-header text-center">
           <h2 className="section-title mt-0">Join the Community that supports you!</h2>
           <p className="section-paragraph mb-0">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad
-            quis nostrud.
+          A tight-knit community is here to assist you in your journey of putting knowledge into 
+          action by providing the right guidance and resources. Shhh! There’s more to the story. Join 
+          our discord server to get to know us better
           </p>
         </div>
         <div data-aos="zoom-in" className="pricing-tables-wrap">
