@@ -25,7 +25,7 @@ const Header = () => {
             <NavLink to={location.pathname=== '/' ? "/aboutus": '/'} style={{textDecoration: 'none'}}>
               {location.pathname=== '/' ? "About Us": 'Home'}
             </NavLink>
-            <a href="https://scalantmemberform.netlify.app/" target="_blank" style={{textDecoration: 'none'}}>
+            <a href="https://www.regform.scalant.in/" target="_blank" style={{textDecoration: 'none'}}>
               Registration
             </a>
           </div>
