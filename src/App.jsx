@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom'
 
 //COMPONENTS
 import CTA from './components/CallToAction/CTA'
@@ -13,6 +13,7 @@ import AboutUs from './components/AboutUs/AboutUs'
 //ANIMATION ON SCROLL
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import DiscordReedirect from './components/DiscordRedirect/DiscordReedirect'
 
 
 AOS.init({
@@ -36,6 +37,9 @@ const App = () => {
           </Route>
           <Route path="/aboutus">
             <AboutUs/>
+          </Route>
+          <Route path='/discord'>
+           <DiscordReedirect/>
           </Route>
         </Switch>
         <Footer/>
