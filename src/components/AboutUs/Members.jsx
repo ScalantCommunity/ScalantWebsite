@@ -18,12 +18,12 @@ const Members = () => {
 
   
   return (
-    <div data-aos="zoom-in" className='container' style={{display: 'flex', flexWrap: 'wrap', gap:'2rem', alignItems: 'center', justifyContent: 'center'}}>
+    <div className='container' style={{display: 'flex', flexWrap: 'wrap', gap:'2rem', alignItems: 'center', justifyContent: 'center'}}>
       {loading && <div style={{display: 'flex', flexWrap: 'wrap', gap:'2rem', alignItems: 'center', justifyContent: 'center', height:'50vh'}}><div className="loading"></div></div>}
       {loading===false && members.map(member=>{
         if(member.isTeamMember){
-          return <Tilt
-        key={member.contactNumber}
+          return <div data-aos="zoom-in" key={member.contactNumber}><Tilt
+        
         perspective={500}
         glareEnable={true}
         glareMaxOpacity={0.45}
@@ -39,29 +39,30 @@ const Members = () => {
           <h2 style={{fontFamily:'Poppins', fontSize:'20px', marginTop:'0.5rem'}}>{member.name.toLocaleUpperCase()}</h2>
           <p style={{fontFamily:'Poppins', fontSize:'20px', marginBottom:'0.5rem'}}>{member.domain}</p>
           <div style={{display:'flex'}}>
-          <a href={member.linkedin} target="_blank">
+          {member.linkedin!=='NA' && <a href={member.linkedin} target="_blank">
             <button style={{ marginRight: 0, background: "#0e76a8" }}>
               <i className="fa fa-linkedin" />
             </button>
-          </a>
-          <a href={member.github} target="_blank">
+          </a>}
+          {member.github!=='NA' && <a href={member.github} target="_blank">
             <button style={{ background: "#4267B2" }}>
               <i className="fa fa-github" />
             </button>
-          </a>
-          <a href={member.twitter} target="_blank">
+          </a>}
+          {member.twitter !== 'NA' && <a href={member.twitter} target="_blank">
             <button style={{ background: "#1DA1F2" }}>
               <i className="fa fa-twitter" />
             </button>
-          </a>
-          <a href={member.instagram} target="_blank">
+          </a>}
+          {member.instagram!=='NA'&& <a href={member.instagram} target="_blank">
             <button style={{ background: "#e4405f" }}>
               <i className="fa fa-instagram" />
             </button>
-          </a>
+          </a>}
           </div>
         </center>
       </Tilt>
+      </div>
         }
       
       })}
