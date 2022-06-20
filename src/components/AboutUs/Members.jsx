@@ -40,23 +40,23 @@ const Members = () => {
           <p style={{fontFamily:'Poppins', fontSize:'20px', marginBottom:'0.5rem'}}>{member.domain}</p>
           <div style={{display:'flex'}}>
           {member.linkedin!=='NA' && <a href={member.linkedin} target="_blank">
-            <button style={{ marginRight: 0, background: "#0e76a8" }}>
-              <i className="fa fa-linkedin" />
+            <button style={{ marginRight: 0, background: "#0073b1", color:'#fff' }}>
+            <i class="fa-brands fa-linkedin-in"></i>
             </button>
           </a>}
           {member.github!=='NA' && <a href={member.github} target="_blank">
-            <button style={{ background: "#4267B2" }}>
-              <i className="fa fa-github" />
+            <button style={{ background: "#161b22", color:'#fff' }}>
+            <i class="fa-brands fa-github"></i>
             </button>
           </a>}
           {member.twitter !== 'NA' && <a href={member.twitter} target="_blank">
-            <button style={{ background: "#1DA1F2" }}>
-              <i className="fa fa-twitter" />
+            <button style={{ background: "#52a7e8", color:'#fff' }}>
+            <i class="fa-brands fa-twitter"></i>
             </button>
           </a>}
           {member.instagram!=='NA'&& <a href={member.instagram} target="_blank">
-            <button style={{ background: "#e4405f" }}>
-              <i className="fa fa-instagram" />
+            <button style={{ background: "#cd3ea1", color: '#fff' }}>
+            <i class="fa-brands fa-instagram"></i>
             </button>
           </a>}
           </div>
