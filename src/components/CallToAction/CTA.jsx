@@ -7,7 +7,7 @@ const CTA = () => {
         <div className="cta-inner section-inner">
           <h3 data-aos="fade-left" className="section-title mt-0">Want to know more about us?</h3>
           <div data-aos="flip-up" className="cta-cta">
-            <a className="button button-primary button-wide-mobile" href="#">
+            <a className="button button-primary button-wide-mobile" href="https://discord.gg/WSePvFt37D" target="_blank">
               Join the Discord
             </a>
           </div>

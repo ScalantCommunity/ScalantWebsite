@@ -8,14 +8,14 @@ const Footer = () => {
     <div className="container">
       <div className="site-footer-inner">
         <div className="brand footer-brand">
-          <a href="#">
+          <Link to='/'>
             <img
               className="header-logo-image"
               src={logo}
               style={{width: '4rem'}}
               alt="Logo"
             />
-          </a>
+          </Link>
         </div>
         <ul className="footer-links list-reset">
           <li>

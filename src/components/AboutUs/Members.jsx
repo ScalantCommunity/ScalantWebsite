@@ -55,7 +55,7 @@ const Members = () => {
             </button>
           </a>}
           {member.instagram!=='NA'&& <a href={member.instagram} target="_blank">
-            <button style={{ background: "#cd3ea1", color: '#fff' }}>
+            <button style={{ background: "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)", color: '#fff' }}>
             <i class="fa-brands fa-instagram"></i>
             </button>
           </a>}

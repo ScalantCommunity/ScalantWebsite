@@ -38,7 +38,7 @@ const Details = () => {
               <div data-aos="flip-left" className="pricing-table-cta mb-8">
                 <a
                   className="button button-primary button-shadow button-block"
-                  href="#"
+                  href="https://discord.gg/WSePvFt37D" target="_blank"
                 >
                   Join the Community Now
                 </a>
