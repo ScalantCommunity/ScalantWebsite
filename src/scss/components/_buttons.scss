@@ -40,12 +40,15 @@
 }
 
 .button-primary {
+    transition: all 0.5s;
 	background: mix(color(primary, 1), color(primary, 2));
     background: linear-gradient(65deg, color(primary, 1) 0, color(primary, 2) 100%);
 
     &:hover {
-		background: lighten(mix(color(primary, 1), color(primary, 2)), 2%);
-        background: linear-gradient(65deg, lighten(color(primary, 1), 2%) 0, lighten(color(primary, 2), 2%) 100%);
+        transition: all 0.5s;
+        transform: scale(1.08);
+        background: rgb(44,151,250);
+        background: linear-gradient(90deg, rgba(44,151,250,1) 0%, rgba(68,162,250,1) 100%);
     }
 }
 
