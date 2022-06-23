@@ -1,6 +1,7 @@
 import React from 'react'
 import art from '../../images/rocket-dynamic-color.png'
 import Tilt from 'react-parallax-tilt';
+import LogoModel from '../../images/Logoo';
 
  const Hero = () => {
 
@@ -20,18 +21,9 @@ import Tilt from 'react-parallax-tilt';
                 </a>
           </div>
         </div>
-        
-            <Tilt
-            perspective={500}
-            glareEnable={true}
-            glareMaxOpacity={0.45}
-            glarePosition="all"
-            scale={1.02}>
-          <div style={{display:'flex', alignItems:'center', justifyContent: 'center'}} data-aos="fade-left" className=" anime-element">
-          <img src={art}/>
-          </div>
-            </Tilt>
-  
+          <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+            <LogoModel/>
+        </div>
       </div>
     </div>
   </section>
