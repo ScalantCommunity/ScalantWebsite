@@ -13,7 +13,7 @@ import { Canvas, useFrame } from 'react-three-fiber';
   })
   const { nodes, materials } = useGLTF('/logoo.glb')
   return (
-    <group ref={group} {...props} dispose={null}  scale={2}>
+    <group ref={group} {...props} dispose={null}  scale={1.75}>
       <group position={[0.58, -0.58, 0]} rotation={[-1.54, -0.54, 3.14]} scale={[0.46, 0.15, 0.31]}>
         <mesh geometry={nodes.Cube003_1.geometry} material={materials['Material.001']} />
         <mesh geometry={nodes.Cube003_2.geometry} material={materials.Material} />
