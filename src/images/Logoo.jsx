@@ -9,9 +9,9 @@ import { Canvas, useFrame } from 'react-three-fiber';
  function Logo({ ...props }) {
   const group = useRef()
   useFrame(()=> {
-    group.current.rotation.y += 0.005
+    group.current.rotation.y += 0.01
   })
-  const { nodes, materials } = useGLTF('/logoo.glb')
+  const { nodes, materials } = useGLTF('/logooo.glb')
   return (
     <group ref={group} {...props} dispose={null}  scale={1.75}>
       <group position={[0.58, -0.58, 0]} rotation={[-1.54, -0.54, 3.14]} scale={[0.46, 0.15, 0.31]}>
@@ -23,15 +23,19 @@ import { Canvas, useFrame } from 'react-three-fiber';
   )
 }
 
-useGLTF.preload('/logoo.glb')
+useGLTF.preload('/logooo.glb')
 
 export default function LogoModel() {
   return(
     <div style={{ width: "30rem", height: "70vh" }}>
   <Canvas>
-  <ambientLight intensity={3.5}/>
-  <spotLight intensity={3.5} position={[300, 300, 4000]} />
-  <spotLight intensity={1.6} position={[30, 30, 50]} angle={0.5} penumbra={1} castShadow />
+  <ambientLight intensity={3.5} angle={0.5} penumbra={1} castShadow/>
+  <spotLight intensity={1.6} position={[-300, 0, 0]} angle={0.5} penumbra={1} castShadow />
+  <spotLight intensity={3.5} position={[300, 0, 0]} angle={0.5} penumbra={1} castShadow/>
+  <spotLight intensity={3.5} position={[0, 0, 300]} angle={0.5} penumbra={1} castShadow/>
+  <spotLight intensity={3.5} position={[0, 0, -300]} angle={0.5} penumbra={1} castShadow/>
+  <spotLight intensity={3.5} position={[0, 300, 0]} angle={0.5} penumbra={1} castShadow/>
+  <spotLight intensity={3.5} position={[0, -300, 0]} angle={0.5} penumbra={1} castShadow/>
   <Suspense fallback={null}>
      <Logo />
   </Suspense>
