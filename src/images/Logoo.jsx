@@ -30,12 +30,12 @@ export default function LogoModel() {
     <div style={{ width: "30rem", height: "70vh" }}>
   <Canvas>
   <ambientLight intensity={3.5} angle={0.5} penumbra={1} castShadow/>
-  <spotLight intensity={1.6} position={[-300, 0, 0]} angle={0.5} penumbra={1} castShadow />
-  <spotLight intensity={3.5} position={[300, 0, 0]} angle={0.5} penumbra={1} castShadow/>
-  <spotLight intensity={3.5} position={[0, 0, 300]} angle={0.5} penumbra={1} castShadow/>
-  <spotLight intensity={3.5} position={[0, 0, -300]} angle={0.5} penumbra={1} castShadow/>
-  <spotLight intensity={3.5} position={[0, 300, 0]} angle={0.5} penumbra={1} castShadow/>
-  <spotLight intensity={3.5} position={[0, -300, 0]} angle={0.5} penumbra={1} castShadow/>
+  <directionalLight intensity={1.6} position={[-300, 0, 0]} angle={0.5} penumbra={1} castShadow />
+  <directionalLight intensity={3.5} position={[300, 0, 0]} angle={0.5} penumbra={1} castShadow/>
+  <directionalLight intensity={3.5} position={[0, 0, 300]} angle={0.5} penumbra={1} castShadow/>
+  <directionalLight intensity={3.5} position={[0, 0, -300]} angle={0.5} penumbra={1} castShadow/>
+  <directionalLight intensity={3.5} position={[0, 300, 0]} angle={0.5} penumbra={1} castShadow/>
+  <directionalLight intensity={3.5} position={[0, -300, 0]} angle={0.5} penumbra={1} castShadow/>
   <Suspense fallback={null}>
      <Logo />
   </Suspense>
