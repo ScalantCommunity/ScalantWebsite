@@ -1,14 +1,24 @@
 import axios from 'axios';
 import React from 'react'
+import { useMediaQuery } from 'react-responsive'
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import Tilt from 'react-parallax-tilt';
 const Members = () => {
   const [members, setMembers] = React.useState([])
   const [loading, setLoading] = React.useState(false)
 
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1224px)'
+  })
+  const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+  const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
+
   React.useEffect(() => {
     const fetchMembers = async ()=>{
       setLoading(true)
-      const {data} = await axios.get('https://scalantformapi-dishant5570-gmailcom-scalant.vercel.app/api/images')
+      const {data} = await axios.get('https://lovely-carlsbad-caverns-40608.herokuapp.com/api/images')
       setMembers(data)
       setLoading(false)
     }
@@ -20,7 +30,7 @@ const Members = () => {
   return (
     <div className='container' style={{display: 'flex', flexWrap: 'wrap', gap:'2rem', alignItems: 'center', justifyContent: 'center'}}>
       {loading && <div style={{display: 'flex', flexWrap: 'wrap', gap:'2rem', alignItems: 'center', justifyContent: 'center', height:'50vh'}}><div className="loading"></div></div>}
-      {loading===false && members.map(member=>{
+      {loading===false && isDesktopOrLaptop && members.map(member=>{
         if(member.isTeamMember){
           return <div data-aos="zoom-in" key={member.contactNumber}><Tilt
         
@@ -66,7 +76,67 @@ const Members = () => {
         }
       
       })}
-  
+
+      {loading===false && isTabletOrMobile && <div>
+      <CarouselProvider
+        naturalSlideWidth={100}
+        naturalSlideHeight={125}
+        totalSlides={members.length}
+      >
+        <Slider>
+      {members.map((member, i)=>{
+        if(member.isTeamMember){
+          console.log(i)
+          return <Slide index={i} key={member.email}>
+            <div ><Tilt
+        
+        perspective={500}
+        glareEnable={true}
+        glareMaxOpacity={0.45}
+        glarePosition="all"
+        scale={1.02}
+        className="parallax-effect-glare-scale">
+        <center className="inner-element">
+          <img
+            src={member.photo}
+            alt="image"
+            style={{height:'8rem', width:'8rem', borderRadius:'4rem',  filter:'drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5))'}}
+          />
+          <h2 style={{fontFamily:'Poppins', fontSize:'20px', marginTop:'0.5rem'}}>{member.name.toLocaleUpperCase()}</h2>
+          <p style={{fontFamily:'Poppins', fontSize:'20px', marginBottom:'0.5rem'}}>{member.domain}</p>
+          <div style={{display:'flex'}}>
+          {member.linkedin!=='NA' && <a href={member.linkedin} target="_blank">
+            <button className='linkButton' style={{ marginRight: 0, background: "#0073b1", color:'#fff', transition: 'all 0.2s' }}>
+            <i class="fa-brands fa-linkedin-in"></i>
+            </button>
+          </a>}
+          {member.github!=='NA' && <a href={member.github} target="_blank">
+            <button className='linkButton' style={{ background: "#161b22", color:'#fff', transition: 'all 0.2s' }}>
+            <i class="fa-brands fa-github"></i>
+            </button>
+          </a>}
+          {member.twitter !== 'NA' && <a href={member.twitter} target="_blank">
+            <button className='linkButton' style={{ background: "#52a7e8", color:'#fff', transition: 'all 0.2s' }}>
+            <i class="fa-brands fa-twitter"></i>
+            </button>
+          </a>}
+          {member.instagram!=='NA'&& <a href={member.instagram} target="_blank">
+            <button className='linkButton' style={{ background: "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)", color: '#fff', transition: 'all 0.2s' }}>
+            <i class="fa-brands fa-instagram"></i>
+            </button>
+          </a>}
+          </div>
+        </center>
+      </Tilt>
+      </div>
+      </Slide>
+        }
+      
+      })}
+      </Slider>
+      </CarouselProvider>
+      </div>
+      }
     </div>
     
   )
