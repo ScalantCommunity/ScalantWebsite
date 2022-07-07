@@ -14,6 +14,7 @@ import AboutUs from './components/AboutUs/AboutUs'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import DiscordReedirect from './components/DiscordRedirect/DiscordReedirect'
+import TnCRedirect from './components/DiscordRedirect/TncRedirect'
 
 
 AOS.init({
@@ -40,6 +41,9 @@ const App = () => {
           </Route>
           <Route path='/discord'>
            <DiscordReedirect/>
+          </Route>
+          <Route path='/tnc'>
+           <TnCRedirect/>
           </Route>
         </Switch>
         <Footer/>
