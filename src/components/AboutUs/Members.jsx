@@ -18,7 +18,7 @@ const Members = () => {
   React.useEffect(() => {
     const fetchMembers = async ()=>{
       setLoading(true)
-      const {data} = await axios.get('https://lovely-carlsbad-caverns-40608.herokuapp.com/api/images')
+      const {data} = await axios.get('https://cedar-chemist-350213.de.r.appspot.com/api/images')
       setMembers(data)
       setLoading(false)
     }
