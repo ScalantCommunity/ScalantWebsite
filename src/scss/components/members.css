@@ -127,3 +127,30 @@
   transition: all 0.2s;
   transform:scale(1.15);
 }
+
+
+
+@media screen and (min-width: 1224px) {
+  .slick-track{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 2rem !important;
+    height: 22rem !important;
+  }
+}
+@media screen and (max-width: 1224px) {
+  .slick-arrow{
+    display: none !important;
+  }
+
+  .parallax-effect-glare-scale{
+    width: 300px !important;
+  }
+
+  .slick-slide{
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
+  
