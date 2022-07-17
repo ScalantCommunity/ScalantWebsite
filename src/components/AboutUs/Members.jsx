@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React from 'react'
 import { useMediaQuery } from 'react-responsive'
+import Carousel from 'react-grid-carousel'
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import Tilt from 'react-parallax-tilt';
@@ -38,17 +39,20 @@ const Members = () => {
 
   
   return (
-    <div className='container' style={{display: 'flex', flexWrap: 'wrap', gap:'2rem', alignItems: 'center', justifyContent: 'center',}}>
+    <div className='container' >
       {loading && <div style={{display: 'flex', flexWrap: 'wrap', gap:'2rem', alignItems: 'center', justifyContent: 'center', height:'50vh'}}><div className="loading"></div></div>}
-      {loading===false && isDesktopOrLaptop && members.map(member=>{
+      {loading===false && isDesktopOrLaptop && <Carousel cols={3}
+  rows={1}
+  gap={15} 
+  arrowRight={<i class="fa-solid fa-circle-arrow-right"></i>}
+  arrowLeft={<i class="fa-solid fa-circle-arrow-left"></i>}
+  autoplay={3000}
+  loop>
+        {members.map(member=>{
         if(member.isTeamMember){
-          return <div data-aos="zoom-in" key={member.contactNumber}><Tilt
+          return <Carousel.Item >
+          <div key={member.contactNumber}><div
         
-        perspective={500}
-        glareEnable={true}
-        glareMaxOpacity={0.45}
-        glarePosition="all"
-        scale={1.02}
         className="parallax-effect-glare-scale">
         <center className="inner-element">
           <img
@@ -81,13 +85,16 @@ const Members = () => {
           </a>}
           </div>
         </center>
-      </Tilt>
       </div>
+      </div>
+      </Carousel.Item>
         }
       
       })}
+        </Carousel>}
 
-      {loading===false && isTabletOrMobile && <CarouselProvider
+      {loading===false && isTabletOrMobile && <div style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
+      <CarouselProvider
         naturalSlideWidth={100}
         naturalSlideHeight={125}
         isPlaying={true}
@@ -140,8 +147,7 @@ const Members = () => {
       
       })}
         </Slider>
-        </CarouselProvider>
-        }
+        </CarouselProvider></div>}
     </div>
     
   )
