@@ -15,6 +15,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import DiscordReedirect from './components/DiscordRedirect/DiscordReedirect'
 import TnCRedirect from './components/DiscordRedirect/TncRedirect'
+import InstagramPosts from './components/InstagramPosts/InstagramPosts'
 
 
 AOS.init({

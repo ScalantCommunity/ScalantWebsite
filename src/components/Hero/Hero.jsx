@@ -1,6 +1,4 @@
 import React from 'react'
-import art from '../../images/rocket-dynamic-color.png'
-import Tilt from 'react-parallax-tilt';
 import LogoModel from '../../images/Logoo';
 
  const Hero = () => {
@@ -16,7 +14,7 @@ import LogoModel from '../../images/Logoo';
           </p>  
           <div className="hero-cta">
               <a className="button button-primary" style={{width:'100%', display: 'flex', justifyContent: 'center', gap:'0.5rem'}} target="_blank" href="https://discord.gg/WSePvFt37D">
-              <i class="fa-brands fa-discord"></i>
+              <i className="fa-brands fa-discord"></i>
                 Join the Discord
                 </a>
           </div>
