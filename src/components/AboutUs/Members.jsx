@@ -20,7 +20,7 @@ const Members = () => {
   React.useEffect(() => {
     const fetchMembers = async ()=>{
       setLoading(true)
-      const {data} = await axios.get('https://cedar-chemist-350213.de.r.appspot.com/api/images')
+      const {data} = await axios.get('https://apiscalant.live/api/images')
       setMembers(data)
       let teammem = 0;
       data.map(el=>{
