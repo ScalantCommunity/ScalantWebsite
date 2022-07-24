@@ -171,9 +171,9 @@
 
 
 .instacard {
-  background-color: #fff;
+  background-color: #15181D;
   width: 600px;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #0f0f0f;
   border-radius: 0.5rem;
 }
 .instacard .commentInput {
@@ -195,16 +195,16 @@
   outline: none !important;
 }
 .instacard .postImage {
-  width: 100%;
-  height: 13rem;
+  width: 16rem;
+  height: 16rem;
 }
 .instacard .username {
   padding: 12px !important;
   font-weight: 700;
-  color: #262626;
+  color: #fff;
   display: flex;
   align-items: center;
-
+  border-bottom: 1px solid #fff;
 }
 .instacard .username p {
   padding-left: 12px;
@@ -215,6 +215,7 @@
   width: 30px;
   height: 30px;
   border-radius: 30px;
+  border: 1px solid #fff;
 }
 .instacard .status {
   border-bottom: 1px solid #f2f2f2;

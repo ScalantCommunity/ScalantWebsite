@@ -28,12 +28,9 @@ const MobileSlider = ({members}) => {
            <img className="postImage" src={member.media_url}></img> 
            </div>     
           <div className="status">  
-           <div className="like">
-           <img src="https://cdn4.iconfinder.com/data/icons/app-custom-ui-1/48/Heart-128.png"></img>
-           <img src="https://cdn4.iconfinder.com/data/icons/app-custom-ui-1/48/Chat_bubble-128.png"></img>
-           </div>
            
-           <div className="comment"><b>Scalant</b>  Scale up Skills</div>
+           
+         
          </div>
          </div>
     
