@@ -23,6 +23,7 @@
     "react-colorful": "^5.5.1",
     "react-dom": "^18.0.0",
     "react-grid-carousel": "^1.0.1",
+    "react-ig-feed": "^1.7.0",
     "react-parallax-tilt": "^1.7.40",
     "react-responsive": "^9.0.0-beta.10",
     "react-reveal": "^1.2.2",

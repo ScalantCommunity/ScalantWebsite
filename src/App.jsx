@@ -33,6 +33,7 @@ const App = () => {
             <main>
               <Hero/>
               <Features/>
+              <InstagramPosts/>
               <Details/>
               <CTA/>
             </main>

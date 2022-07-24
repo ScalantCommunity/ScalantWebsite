@@ -1,6 +1,7 @@
 import React from 'react'
 
-
+import InstagramFeed  from 'react-ig-feed'
+import 'react-ig-feed/dist/index.css'
 
 const Features = () => {
   return (
@@ -40,6 +41,7 @@ const Features = () => {
         </div>
       </div>
     </div>
+    
   </section>
   )
 }
