@@ -11,6 +11,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "3d-react-carousal": "^5.0.0",
     "@react-three/drei": "^9.13.2",
     "@react-three/fiber": "^8.0.26",
     "aos": "^3.0.0-beta.6",

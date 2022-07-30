@@ -51,11 +51,7 @@
   width: 300px;
   height: 400px;
   padding: 20px;
-  background: linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.2)
-  );
+  background: linear-gradient(90deg, rgba(22,16,138,1) 0%, rgba(72,75,80,1) 0%);
 
   box-shadow: 0 0 20px #000;
   border-top: 2px solid rgba(255, 255, 255, 0.25);
@@ -234,4 +230,13 @@
 }
 .instacard .status .like {
   display: flex;
+}
+
+.slider-single-content{
+  opacity: 1 !important;
+  box-shadow: none !important;
+}
+
+.slider-content{
+  width: 100% !important;
 }
