@@ -240,3 +240,7 @@
 .slider-content{
   width: 100% !important;
 }
+
+.react-pdf__Page__annotations{
+  display: none !important;
+}
