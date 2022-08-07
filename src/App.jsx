@@ -1,3 +1,4 @@
+//REACT
 import React from 'react'
 import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom'
 
@@ -9,13 +10,14 @@ import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import Hero  from './components/Hero/Hero'
 import AboutUs from './components/AboutUs/AboutUs'
+import Brochure from './components/Brochure/Brochure'
+import InstagramPosts from './components/InstagramPosts/InstagramPosts'
+import TnCRedirect from './components/DiscordRedirect/TncRedirect'
+import DiscordReedirect from './components/DiscordRedirect/DiscordReedirect'
 
 //ANIMATION ON SCROLL
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import DiscordReedirect from './components/DiscordRedirect/DiscordReedirect'
-import TnCRedirect from './components/DiscordRedirect/TncRedirect'
-import InstagramPosts from './components/InstagramPosts/InstagramPosts'
 
 
 AOS.init({
@@ -46,6 +48,9 @@ const App = () => {
           </Route>
           <Route path='/tnc'>
            <TnCRedirect/>
+          </Route>
+          <Route path='/brochure'>
+           <Brochure/>
           </Route>
         </Switch>
         <Footer/>
