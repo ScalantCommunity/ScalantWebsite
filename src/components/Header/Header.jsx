@@ -23,10 +23,13 @@ const Header = () => {
           </h1>
           <div style={{display: 'flex', gap:'1rem'}}>
             <NavLink className='headerLink' to={location.pathname=== '/' ? "/aboutus": '/'} style={{textDecoration: 'none'}}>
-              {location.pathname=== '/' ? "About Us": 'Home'}
+              {location.pathname=== '/' ? "About": 'Home'}
+            </NavLink>
+            <NavLink className='headerLink' to={"/brochure"} style={{textDecoration: 'none'}}>
+              {location.pathname=== '/' ? "Brochure": ''}
             </NavLink>
             <a className="headerLink" href="https://www.regform.scalant.in/" target="_blank" style={{textDecoration: 'none'}}>
-              Registration
+              Register
             </a>
           </div>
         </div>
