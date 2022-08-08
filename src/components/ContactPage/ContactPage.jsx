@@ -3,6 +3,7 @@ import React from 'react'
 import toast from 'react-hot-toast'
 import './ContactPage.css'
 import { RotatingLines } from 'react-loader-spinner';
+import { useHistory } from 'react-router-dom';
 
 
 const ContactPage = () => {
@@ -10,6 +11,7 @@ const ContactPage = () => {
   const [name, setName] = React.useState('')
   const [email, setEmail] = React.useState('')
   const [message, setMessage] = React.useState('')
+  const history = useHistory()
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -18,6 +20,13 @@ const ContactPage = () => {
     setLoading(false)
     if(data.success){
       toast.success(data.info)
+      setEmail('')
+      setName('')
+      setMessage('')
+
+      setTimeout(()=>{
+        history.push('/')
+      },1000)
     }else{
       toast.error(data)
     }
@@ -27,20 +36,21 @@ const ContactPage = () => {
     <div style={{zIndex:'100'}}>
       <section id="contact">
   <div className="contact-box">
-    <div style={{display:'flex', alignItems:'center', justifyContent:'center'}} className="contact-links">
+    {/* <div style={{display:'flex', alignItems:'center', justifyContent:'center'}} className="contact-links">
       <h2>CONTACT</h2>
 
-    </div>
+    </div> */}
     <div className="contact-form-wrapper">
+      <h2>Contact Us</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-item">
           <input onChange={(e)=> setName(e.target.value)} value={name} type="text" name="sender" required="" />
           <label>Name:</label>
-        </div>
+        </div><br/>
         <div className="form-item">
           <input onChange={(e)=> setEmail(e.target.value)} value={email} type="email" name="email" required="" />
           <label>Email:</label>
-        </div>
+        </div><br/>
         <div className="form-item">
           <textarea onChange={(e)=> setMessage(e.target.value)} value={message} className="" name="message" required="" defaultValue={""} />
           <label>Message:</label>

@@ -9,14 +9,14 @@
 }
 
 .contact-box {
-  width: clamp(100px, 90%, 1000px);
-  margin: 80px 50px;
+  width: 22rem;
+  margin: 40px 50px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .contact-links, .contact-form-wrapper {
-  width: 50%;
+  width: 100%;
   padding: 8% 5% 10% 5%;
 }
 
@@ -42,8 +42,9 @@
 
 .contact-form-wrapper {
   background-color: #2C3539;
-  border-left:1px solid #fff;
-  border-radius: 0 10px 10px 0;
+  border-radius: 10px;
+  border: 0.5px solid #00FFFF;
+  padding: 2rem;
 }
 
 @media only screen and (max-width: 800px) {
@@ -52,7 +53,7 @@
   }
   
   .contact-links {
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
   }
   
   .contact-form-wrapper {
@@ -69,12 +70,12 @@
 
 #contact h2 {
   font-family: 'Popins', sans-serif;
-  color: #1D2026;
-  text-shadow: 0 0 5px #fff, 0 0 5px #fff;
-  font-size: clamp(30px, 6vw, 60px);
-  letter-spacing: 2px;
+  color: #fff;
+  font-size: 48px;
   text-align: center;
   transform: scale(.95, 1);
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
 }
 
 #contact .links {
