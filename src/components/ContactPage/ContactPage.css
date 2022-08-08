@@ -22,26 +22,27 @@
 
 
 .contact-links {
-  background-color: #1f2e43;
+  background-color: #5276FF;
   background:
     radial-gradient(
-      circle at 55% 92%, #426691 0 12%, transparent 12.2%
+      circle at 55% 92%, #fff 0 12%, transparent 12.2%
     ), 
     radial-gradient(
-      circle at 94% 72%, #426691 0 10%, transparent 10.2%
+      circle at 94% 72%, #5276FF 0 10%, transparent 10.2%
     ), 
     radial-gradient(
-      circle at 20% max(78%, 350px), #263a53 0 7%, transparent 7.2%
+      circle at 20% max(78%, 350px), #00FFFD 0 7%, transparent 7.2%
     ), 
     radial-gradient(
-      circle at 0% 0%, #263a53 0 40%, transparent 40.2%
+      circle at 0% 0%, #f7f7f7 0 40%, transparent 40.2%
     ), 
     #1f2e43;
   border-radius: 10px 0 0 10px;
 }
 
 .contact-form-wrapper {
-  background-color: #ffffff8f;
+  background-color: #2C3539;
+  border-left:1px solid #fff;
   border-radius: 0 10px 10px 0;
 }
 
@@ -67,8 +68,9 @@
 }
 
 #contact h2 {
-  font-family: 'Arimo', sans-serif;
-  color: #fff;
+  font-family: 'Popins', sans-serif;
+  color: #1D2026;
+  text-shadow: 0 0 5px #fff, 0 0 5px #fff;
   font-size: clamp(30px, 6vw, 60px);
   letter-spacing: 2px;
   text-align: center;
