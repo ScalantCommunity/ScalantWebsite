@@ -1,6 +1,7 @@
 import React from 'react'
 import LogoModel from '../../images/Logoo';
 import { useMediaQuery } from 'react-responsive'
+import { Link } from 'react-router-dom';
  const Hero = () => {
 
   const isDesktopOrLaptop = useMediaQuery({
@@ -25,20 +26,20 @@ import { useMediaQuery } from 'react-responsive'
               <i className="fa-brands fa-discord"></i>
                  Join the Discord
                 </a>
-              <a className="button button-secondary" style={{width:'50%',backgroundColor:'#1a5b96', display: 'flex', justifyContent: 'center', gap:'0.5rem'}} target="_blank" href="https://links.scalant.in">
+              <Link className="button button-secondary" style={{width:'50%',backgroundColor:'#1a5b96', display: 'flex', justifyContent: 'center', gap:'0.5rem'}} to='/contact' >
               <i class="fa-solid fa-circle-info"></i>
-                 Know More
-                </a>
+                 Contact Us
+                </Link>
           </div>}
           {isTabletOrMobile && <div className="hero-cta" >
               <a className="button button-primary" style={{width:'100%', display: 'flex', justifyContent: 'center', gap:'0.5rem'}} target="_blank" href="https://discord.gg/WSePvFt37D">
               <i className="fa-brands fa-discord"></i>
                  Join the discord
                 </a>
-              <a className="button button-secondary" style={{width:'100%',backgroundColor:'#1a5b96', display: 'flex', justifyContent: 'center', gap:'0.5rem', marginTop:'1rem'}} target="_blank" href="https://links.scalant.in">
+              <Link to='/contact' className="button button-secondary" style={{width:'100%',backgroundColor:'#1a5b96', display: 'flex', justifyContent: 'center', gap:'0.5rem', marginTop:'1rem'}} >
               <i class="fa-solid fa-circle-info"></i>
-                 Know More
-                </a>
+                 Contact Us
+                </Link>
           </div>}
         </div>
           <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>

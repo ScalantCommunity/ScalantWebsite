@@ -24,6 +24,7 @@
     "react-colorful": "^5.5.1",
     "react-dom": "^18.0.0",
     "react-grid-carousel": "^1.0.1",
+    "react-hot-toast": "^2.3.0",
     "react-ig-feed": "^1.7.0",
     "react-loader-spinner": "^5.1.7-beta.1",
     "react-parallax-tilt": "^1.7.40",

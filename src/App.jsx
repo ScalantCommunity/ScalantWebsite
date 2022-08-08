@@ -14,10 +14,12 @@ import Brochure from './components/Brochure/Brochure'
 import InstagramPosts from './components/InstagramPosts/InstagramPosts'
 import TnCRedirect from './components/DiscordRedirect/TncRedirect'
 import DiscordReedirect from './components/DiscordRedirect/DiscordReedirect'
+import { Toaster } from 'react-hot-toast';
 
 //ANIMATION ON SCROLL
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ContactPage from './components/ContactPage/ContactPage';
 
 
 AOS.init({
@@ -52,9 +54,13 @@ const App = () => {
           <Route path='/brochure'>
            <Brochure/>
           </Route>
+          <Route path='/contact'>
+           <ContactPage/>
+          </Route>
         </Switch>
         <Footer/>
       </div>
+      <Toaster />
     </BrowserRouter>
   )
 }
