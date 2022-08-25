@@ -1,6 +1,6 @@
 import React from 'react'
-import LogoModel from '../../images/Logoo';
 import { useMediaQuery } from 'react-responsive'
+import rocket from '../../images/rocket-dynamic-color.png'
 import { Link } from 'react-router-dom';
  const Hero = () => {
 
@@ -41,7 +41,7 @@ import { Link } from 'react-router-dom';
           </div>}
         </div>
           <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-            <LogoModel/>
+            <img style={{zIndex:'100'}} src={rocket}/>
         </div>
       </div>
     </div>
